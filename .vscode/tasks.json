@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Run Next.js dev server on port 3000",
+			"command": "npm run dev",
+			"args": [
+				"--",
+				"-p",
+				"3000"
+			],
+			"isBackground": true,
+			"group": "build",
+			"problemMatcher": [
+				"$tsc"
+			]
+		}
+	]
+}
