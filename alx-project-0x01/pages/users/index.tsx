@@ -3,11 +3,8 @@ import UserCard from "@/components/common/UserCard";
 import Header from "@/components/layout/Header";
 import { UserProps } from "@/interfaces";
 
-interface UsersProps {
-  posts: UserProps[];
-}
-
-const Users: React.FC<UsersProps> = ({ posts }) => {
+// ...existing code...
+const Users: React.FC<{ posts: UserProps[] }> = ({ posts }) => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
